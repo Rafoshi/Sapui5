@@ -1,0 +1,31 @@
+<mvc:View
+    controllerName="sap.ui.demo.walkthrough.controller.HelloPanel"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+
+    <Panel headerText="Cabeçalho"
+        class="sapUiResponsiveMargin"
+        width="auto">
+        <content>
+            <Button
+                id="helloDialogButton"
+                text="Abrir diálogo"
+                class="sapUiSmallMarginEnd"
+                icon="sap-icon://world"
+                press=".onOpenDialog" />
+            <Button
+                text="Diga olá"
+                press=".onShowOi"
+                class="sapUiSmallMarginEnd" />
+            <Input
+                value="{/recipient/name}"
+                description="Teste Hello {/recipient/name}"
+                valueLiveUpdate="true"
+                width="60%" />
+            <Text
+                text="Hello {/recipient/name}"
+                class="sapUiSmallMargin"></Text>
+        </content>
+    </Panel>
+
+</mvc:View>

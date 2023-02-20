@@ -16,16 +16,6 @@
 			"libs": {
 				"sap.m": {}
 			}
-		},
-		"config": {
-			"sample": {
-				"files": [
-					"Page.view.xml",
-					"Page.controller.js",
-					"Tree.json",
-					"manifest.json"
-				]
-			}
 		}
 	}
 }

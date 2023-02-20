@@ -1,14 +1,19 @@
-<mvc:View 
+<mvc:View
     controllerName="sap.ui.demo/walkthrough.controller.App"
-    xmlns="sap.m" 
+    xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
-    displayBlock="true" >
-    <Button 
-        text="Diga olá"
-        press=".onShowOi"/>
-    <Input 
-        value="{/recipient/name}"
-        description="Teste Hello {/recipient/name}"
-        valueLiveUpdate="true"
-        width="60%" />
+    displayBlock="true">
+    <Shell>
+        <App>
+            <pages>
+                <Page title="Br Gaap">
+                    <content>
+                        <mvc:XMLView viewName="sap.ui.demo.walkthrough.view.HelloPanel" />
+                        <mvc:XMLView viewName="sap.ui.demo.walkthrough.view.InvoiceList" />
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+
 </mvc:View>
