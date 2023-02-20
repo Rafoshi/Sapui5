@@ -1,0 +1,31 @@
+{
+	"sap.app": {
+		"id": "sap.brgaap",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "sap.ui.demo.walkthrough.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "app"
+		},
+		"dependencies": {
+			"libs": {
+				"sap.m": {}
+			}
+		},
+		"config": {
+			"sample": {
+				"files": [
+					"Page.view.xml",
+					"Page.controller.js",
+					"Tree.json",
+					"manifest.json"
+				]
+			}
+		}
+	}
+}
