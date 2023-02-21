@@ -1,14 +1,22 @@
 <mvc:View
+    controllerName="sap.ui.demo.walkthrough.controller.InvoiceList"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
-    <List
-        headerText="{i18n>invoiceListTitle}"
+    <List id='invoiceList'
         class="saUiResponsiveMargin"
         width="auto"
         items="{invoice>/}">
+        <headerToolbar>
+            <Toolbar class="sapUiSmallMarginTop sapUiSmallMarginBottom">
+                <ToolbarSpacer />
+                <SearchField width="50%" search=".onFilterInvoices"
+                />
+            </Toolbar>
+        </headerToolbar>
         <items>
             <ObjectListItem
                 title="{invoice>title} x {invoice>completed}" />
+
         </items>
     </List>
 </mvc:View>
