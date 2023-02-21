@@ -7,6 +7,7 @@ sap.ui.define([
 
     return Controller.extend("sap.ui.demo.walkthrough.controller.HelloPanel", {
         onShowOi: function () {
+            q
             MessageToast.show('oi');
         },
 
