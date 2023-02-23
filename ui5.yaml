@@ -1,6 +1,6 @@
 specVersion: '2.3'
 metadata:
-  name: "sap.m.sample.Tree"
+  name: "br.gaap"
 type: application
 resources:
   configuration:

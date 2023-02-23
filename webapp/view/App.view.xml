@@ -4,6 +4,8 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true">
 
-    <App class="myAppDemoWT" id="app"/>
+    <Shell id="shell">
+        <App class="myAppDemoWT" id="app"/>
+    </Shell>
 
 </mvc:View>
