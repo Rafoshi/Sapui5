@@ -2,24 +2,45 @@
     controllerName="sap.ui.demo.walkthrough.controller.InvoiceList"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
-    <List id='invoiceList'
+    <Table 
+        id='invoiceList'
         class="saUiResponsiveMargin"
         width="auto"
         items="{invoice>/}">
-        <headerToolbar>
-            <Toolbar class="sapUiSmallMarginTop sapUiSmallMarginBottom">
-                <ToolbarSpacer />
-                <SearchField width="50%" search=".onFilterInvoices"
-                />
-            </Toolbar>
-        </headerToolbar>
-        <items>
-            <ObjectListItem
-                title="{invoice>title} x {invoice>completed}"
-                type="Navigation"
-                press=".onPress">
-            </ObjectListItem>
-
-        </items>
-    </List>
+            <headerToolbar>
+                <Toolbar class="sapUiSmallMarginTop sapUiSmallMarginBottom">
+                    <ToolbarSpacer />
+                    <SearchField width="50%" search=".onFilterInvoices"
+                    />
+                </Toolbar>
+            </headerToolbar>
+            <items>
+                <ColumnListItem title="{invoice>title} x {invoice>completed}"
+                    type="Navigation"
+                    press=".onPress">
+                <cells>
+                        <Text text="{invoice>id}" id="__text0"/>
+                        <Text text="{invoice>title}" id="__text1"/>
+                        <Text text="{invoice>completed}" id="__text2"/>
+                        </cells>
+                </ColumnListItem>
+            </items>
+            <columns>
+                <Column id="__column0">
+                    <header>
+                        <Label text="Id" id="__label0"/>
+                    </header>
+                </Column>
+                <Column id="__column1">
+                    <header>
+                        <Label text="Título" id="__label1"/>
+                    </header>
+                </Column>
+                <Column id="__column2">
+                    <header>
+                        <Label text="Completado" id="__label2"/>
+                    </header>
+                </Column>
+            </columns>
+        </Table>
 </mvc:View>
