@@ -1,6 +1,7 @@
 <mvc:View
     controllerName="sap.ui.demo.walkthrough.controller.InvoiceList"
     xmlns="sap.m"
+    xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc">
     <Table 
         id='invoiceList'
@@ -15,14 +16,17 @@
                 </Toolbar>
             </headerToolbar>
             <items>
-                <ColumnListItem title="{invoice>title} x {invoice>completed}"
-                    type="Navigation"
-                    press=".onPress">
-                <cells>
+                <ColumnListItem 
+                    title="{invoice>title} x {invoice>completed}"
+                    >
+
+                    <cells>
                         <Text text="{invoice>id}" id="__text0"/>
                         <Text text="{invoice>title}" id="__text1"/>
-                        <Text text="{invoice>completed}" id="__text2"/>
-                        </cells>
+                        <CheckBox valueState="Error" enabled="false" selected="{invoice>completed}" />
+                        <Button icon="sap-icon://detail-view" class="sapUiSmallMarginEnd increaseFont" press=".onPress" type="Transparent"/>             
+                    </cells>
+
                 </ColumnListItem>
             </items>
             <columns>
@@ -41,6 +45,12 @@
                         <Label text="Completado" id="__label2"/>
                     </header>
                 </Column>
+                <Column id="__column3">
+                    <header>
+                        <Label text="Detalhes" id="__label3"/>
+                    </header>
+                </Column>
+
             </columns>
         </Table>
 </mvc:View>

@@ -6,3 +6,7 @@
     padding-top: 5vh !important;
     padding-bottom: 5vh !important;
 }
+
+.sapMLIBShowSeparator>td {
+    border-right: 2px solid#e5e5e5;
+}
