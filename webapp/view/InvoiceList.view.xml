@@ -5,7 +5,7 @@
     xmlns:mvc="sap.ui.core.mvc">
     <Table 
         id='invoiceList'
-        class="saUiResponsiveMargin"
+        class="sapUiLargeMarginBeginEnd"
         width="auto"
         items="{invoice>/}">
             <headerToolbar>
@@ -24,7 +24,7 @@
                         <Text text="{invoice>id}" id="__text0"/>
                         <Text text="{invoice>title}" id="__text1"/>
                         <CheckBox valueState="Error" enabled="false" selected="{invoice>completed}" />
-                        <Button icon="sap-icon://detail-view" class="sapUiSmallMarginEnd increaseFont" press=".onPress" type="Transparent"/>             
+                        <Button icon="sap-icon://detail-view" class="sapUiSmallMarginEnd increaseFont" press=".onPress" type="Transparent" />             
                     </cells>
 
                 </ColumnListItem>

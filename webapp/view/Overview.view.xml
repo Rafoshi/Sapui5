@@ -12,7 +12,7 @@
             </Bar>
         </customHeader>
 
-        <content >
+        <content>
             <mvc:XMLView viewName="sap.ui.demo.walkthrough.view.InvoiceList" />
         </content>
     
