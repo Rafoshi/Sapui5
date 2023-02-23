@@ -15,7 +15,10 @@
         </headerToolbar>
         <items>
             <ObjectListItem
-                title="{invoice>title} x {invoice>completed}" />
+                title="{invoice>title} x {invoice>completed}"
+                type="Navigation"
+                press=".onPress">
+            </ObjectListItem>
 
         </items>
     </List>

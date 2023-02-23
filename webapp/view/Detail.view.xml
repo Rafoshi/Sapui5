@@ -1,0 +1,15 @@
+<mvc:View
+    controllerName="sap.ui.demo.walkthrough.controller.Detail"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Page
+        title="{i18n>detailPageTitle}"
+        showNavButton="true"
+        navButtonPress=".onNavBack">
+        <ObjectHeader 
+            intro="{invoice>title}"
+            title="ID: {invoice>id} UserID: {invoice>userID} Title: {invoice>title} Completed:  {invoice>completed}"
+            >
+        </ObjectHeader>
+    </Page>
+</mvc:View>

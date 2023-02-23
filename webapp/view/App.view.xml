@@ -5,24 +5,7 @@
     displayBlock="true">
 
     <Shell id="shell">
-        <App>
-            <pages>
-                <Page title="Title">
-
-                    <customHeader >
-                        <Bar>
-                            <contentLeft>
-                                <Image src="images/logo.png" class="sapUiLargeMarginBegin sapUiTinyMarginTopBottom"></Image>
-                            </contentLeft>
-                        </Bar>
-                    </customHeader>
-
-                    <content >
-                        <mvc:XMLView viewName="sap.ui.demo.walkthrough.view.InvoiceList" />
-                    </content>
-                </Page>
-            </pages>
-        </App>
+        <App class="myAppDemoWT" id="app"/>
     </Shell>
 
 </mvc:View>

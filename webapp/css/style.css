@@ -2,7 +2,7 @@
     height: 5rem !important;
 }
 
-#__toolbar0{
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+#__toolbar0, #__toolbar1, #__toolbar2{
+    padding-top: 5vh !important;
+    padding-bottom: 5vh !important;
 }
